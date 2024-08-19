@@ -1,3 +1,21 @@
 <resources>
     <string name="app_name">accountingExpensesIncomeBeautySalon</string>
+    <string name="choosingSalon">Выбор салона</string>
+    <string name="salon">Салон</string>
+    <string name="password">Пароль</string>
+    <string name="ds_admin">ds admin</string>
+    <string name="add_client">Добавить клиента</string>
+    <string name="edit_client">Редактировать клиента</string>
+    <string name="add_income">Добавить доход</string>
+    <string name="add_expense">Добавить расход</string>
+    <string name="report">Отчёт</string>
+    <string name="client">Клиент</string>
+    <string name="master">Мастер</string>
+    <string name="procedure">Процедура</string>
+    <string name="type_calculation">Тип расчета</string>
+    <string name="amount">Сумма</string>
+    <string-array name="ds_admin_list">
+        <item>Admin_!</item>
+        <item>Admin_2</item>
+    </string-array>
 </resources>
