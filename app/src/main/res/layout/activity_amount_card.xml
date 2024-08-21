@@ -5,14 +5,14 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".AmountCashActivity">
+    tools:context=".AmountCardActivity">
 
     <TextView
-        android:id="@+id/amount_cash"
+        android:id="@+id/amount_card"
         android:layout_width="350dp"
         android:layout_height="60dp"
         android:layout_marginTop="44dp"
-        android:text="@string/amount_cash"
+        android:text="@string/amount_card"
         android:textAllCaps="true"
         android:textSize="37sp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -28,7 +28,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/amount_cash" />
+        app:layout_constraintTop_toBottomOf="@+id/amount_card" />
 
     <GridLayout
         android:id="@+id/gridLayout"

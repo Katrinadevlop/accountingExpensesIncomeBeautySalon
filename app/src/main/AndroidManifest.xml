@@ -13,6 +13,9 @@
         android:theme="@style/Theme.AccountingExpensesIncomeBeautySalon"
         tools:targetApi="31">
         <activity
+            android:name=".AmountCardActivity"
+            android:exported="false" />
+        <activity
             android:name=".SumFactsActivity"
             android:exported="false" />
         <activity
