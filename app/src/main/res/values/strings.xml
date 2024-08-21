@@ -14,6 +14,9 @@
     <string name="procedure">Процедура</string>
     <string name="type_calculation">Тип расчета</string>
     <string name="amount">Сумма</string>
+    <string name="amount_cash">Сумма наличкой</string>
+    <string name="amount_card">Сумма картой</string>
+    <string name="sum_facts">Сумма фактив</string>
     <string-array name="ds_admin_list">
         <item>Admin_!</item>
         <item>Admin_2</item>
