@@ -31,6 +31,15 @@
     <string name="delete_btn"><![CDATA[<-]]></string>
     <string name="add">Добавить</string>
     <string name="cancellation">Отмена</string>
+    <string name="create_salon">Создать салон</string>
+    <string name="edit_salon">Редактировать салон</string>
+    <string name="edit_data_salon">Редактировать данные в салоне</string>
+    <string name="give_access">Дать доступ</string>
+    <string name="edit_access">Редактировать доступ</string>
+    <string name="check_fixes_salon">Проверить все исправления в салоне</string>
+    <string name="amount_salon_date">Сумма салона по датам</string>
+    <string name="detailed_report">Подробный отчёт</string>
+    <string name="trusted_devices">Доверенные утройства</string>
     <string-array name="ds_admin_list">
         <item>Admin_!</item>
         <item>Admin_2</item>

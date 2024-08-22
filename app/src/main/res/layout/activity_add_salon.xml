@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddSalon">
+
+    <ImageButton
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="16dp"
+        android:background="@android:color/transparent"
+        android:src="@drawable/back_button48px"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.044"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="650dp"
+        android:orientation="vertical"
+        android:paddingStart="5dp"
+        android:paddingEnd="5dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        tools:layout_editor_absoluteX="0dp">
+
+        <Button
+            android:id="@+id/create_salon"
+            android:layout_width="400dp"
+            android:layout_height="45dp"
+            android:text="@string/create_salon"
+            android:textAllCaps="true"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/edit_salon"
+            android:layout_width="400dp"
+            android:layout_height="45dp"
+            android:text="@string/edit_salon"
+            android:textAllCaps="true"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/create_salon" />
+
+        <Button
+            android:id="@+id/edit_data_salon"
+            android:layout_width="400dp"
+            android:layout_height="45dp"
+            android:text="@string/edit_data_salon"
+            android:textAllCaps="true"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/edit_salon" />
+
+        <Button
+            android:id="@+id/give_access"
+            android:layout_width="400dp"
+            android:layout_height="45dp"
+            android:text="@string/give_access"
+            android:textAllCaps="true"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/edit_data_salon" />
+
+        <Button
+            android:id="@+id/edit_access"
+            android:layout_width="400dp"
+            android:layout_height="45dp"
+            android:text="@string/edit_access"
+            android:textAllCaps="true"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/give_access" />
+
+        <Button
+            android:id="@+id/check_fixes_salon"
+            android:layout_width="400dp"
+            android:layout_height="45dp"
+            android:text="@string/check_fixes_salon"
+            android:textAllCaps="true"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/edit_access" />
+
+        <Button
+            android:id="@+id/amount_salon_date"
+            android:layout_width="400dp"
+            android:layout_height="45dp"
+            android:text="@string/amount_salon_date"
+            android:textAllCaps="true"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/check_fixes_salon" />
+
+        <Button
+            android:id="@+id/detailed_report"
+            android:layout_width="400dp"
+            android:layout_height="45dp"
+            android:text="@string/detailed_report"
+            android:textAllCaps="true"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/amount_salon_date" />
+
+        <Button
+            android:id="@+id/trusted_devices"
+            android:layout_width="400dp"
+            android:layout_height="45dp"
+            android:text="@string/trusted_devices"
+            android:textAllCaps="true"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/detailed_report" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
