@@ -25,7 +25,6 @@ class MainActivity : AppCompatActivity() {
         val userIdSalon = findViewById<Spinner>(R.id.ds_admin_list)
         val userPasswordSalon = findViewById<EditText>(R.id.editText_password)
         val buttonPassword = findViewById<Button>(R.id.password)
-
         buttonPassword.setOnClickListener(){
             val idSalon = userIdSalon.selectedItem
             val passwordSalon = userPasswordSalon.text.toString().trim()
@@ -36,6 +35,12 @@ class MainActivity : AppCompatActivity() {
                 val intent = Intent(this@MainActivity, AccountingActivity::class.java)
                 startActivity(intent)
             }
+        }
+
+        val buttonDsAdmin = findViewById<Button>(R.id.ds_admin)
+        buttonDsAdmin.setOnClickListener(){
+            val intent = Intent(this@MainActivity, AddSalonActivity::class.java)
+            startActivity(intent)
         }
     }
 }
