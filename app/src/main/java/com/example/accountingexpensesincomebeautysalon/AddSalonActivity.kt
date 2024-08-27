@@ -13,7 +13,7 @@ import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 
 class AddSalonActivity : AppCompatActivity() {
-    private fun AlertDialogs(title:String, text: String) {
+    private fun alertDialogs(title:String, text: String) {
         val inputEditText = EditText(this@AddSalonActivity)
         AlertDialog.Builder(this@AddSalonActivity)
             .setTitle(title)
@@ -48,47 +48,47 @@ class AddSalonActivity : AppCompatActivity() {
 
         val buttonCreateSalon = findViewById<Button>(R.id.create_salon)
         buttonCreateSalon.setOnClickListener(){
-            AlertDialogs("Название салона", "Добавление нового салона")
+            alertDialogs("Название салона", "Добавление нового салона")
         }
 
         val buttonEditSalon = findViewById<Button>(R.id.edit_salon)
         buttonEditSalon.setOnClickListener(){
-            AlertDialogs("Какой-то текст", "Какой-то текст")
+            alertDialogs("Какой-то текст", "Какой-то текст")
         }
 
         val buttonEditDataDalon = findViewById<Button>(R.id.edit_data_salon)
         buttonEditDataDalon.setOnClickListener(){
-            AlertDialogs("Какой-то текст", "Какой-то текст")
+            alertDialogs("Какой-то текст", "Какой-то текст")
         }
 
         val buttonGiveAccess = findViewById<Button>(R.id.give_access)
         buttonGiveAccess.setOnClickListener(){
-            AlertDialogs("Какой-то текст", "Какой-то текст")
+            alertDialogs("Какой-то текст", "Какой-то текст")
         }
 
         val buttonEditAccess = findViewById<Button>(R.id.edit_access)
         buttonEditAccess.setOnClickListener(){
-            AlertDialogs("Какой-то текст", "Какой-то текст")
+            alertDialogs("Какой-то текст", "Какой-то текст")
         }
 
         val buttonCheckFixesSalon = findViewById<Button>(R.id.check_fixes_salon)
         buttonCheckFixesSalon.setOnClickListener(){
-            AlertDialogs("Какой-то текст", "Какой-то текст")
+            alertDialogs("Какой-то текст", "Какой-то текст")
         }
 
         val buttonAmountSalonDate = findViewById<Button>(R.id.amount_salon_date)
         buttonAmountSalonDate.setOnClickListener(){
-            AlertDialogs("Какой-то текст", "Какой-то текст")
+            alertDialogs("Какой-то текст", "Какой-то текст")
         }
 
         val buttonDetailedReport = findViewById<Button>(R.id.detailed_report)
         buttonDetailedReport.setOnClickListener(){
-            AlertDialogs("Какой-то текст", "Какой-то текст")
+            alertDialogs("Какой-то текст", "Какой-то текст")
         }
 
         val buttonTrustedDevices = findViewById<Button>(R.id.trusted_devices)
         buttonTrustedDevices.setOnClickListener(){
-            AlertDialogs("Какой-то текст", "Какой-то текст")
+            alertDialogs("Добавить доверенное устройство", "Серийный номер устройства")
         }
     }
 }

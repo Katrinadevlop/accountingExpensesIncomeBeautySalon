@@ -8,7 +8,7 @@
     tools:context=".AddExpenseActivity">
 
     <ImageButton
-        android:id="@+id/back_button48px"
+        android:id="@+id/imageButton_Back"
         android:layout_width="38dp"
         android:layout_height="39dp"
         android:layout_marginTop="16dp"

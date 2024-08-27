@@ -9,11 +9,11 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 
-class AddExpenseActivity : AppCompatActivity() {
+class AddIncomeActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
-        setContentView(R.layout.activity_add_expense)
+        setContentView(R.layout.activity_add_income)
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
@@ -22,25 +22,25 @@ class AddExpenseActivity : AppCompatActivity() {
 
         val imageButtonBack = findViewById<ImageButton>(R.id.imageButton_Back)
         imageButtonBack.setOnClickListener(){
-            val intent = Intent(this@AddExpenseActivity, AccountingActivity::class.java)
+            val intent = Intent(this@AddIncomeActivity, AccountingActivity::class.java)
             startActivity(intent)
         }
 
         val buttonAmountCash = findViewById<Button>(R.id.amount_cash)
         buttonAmountCash.setOnClickListener {
-            val intent = Intent(this@AddExpenseActivity, AmountCardActivity::class.java)
+            val intent = Intent(this@AddIncomeActivity, AmountCardActivity::class.java)
             startActivity(intent)
         }
 
         val buttonAmountCard = findViewById<Button>(R.id.amount_card)
         buttonAmountCard.setOnClickListener {
-            val intent = Intent(this@AddExpenseActivity, AmountCashActivity::class.java)
+            val intent = Intent(this@AddIncomeActivity, AmountCashActivity::class.java)
             startActivity(intent)
         }
 
         val buttonSumFacts = findViewById<Button>(R.id.sum_facts)
         buttonSumFacts.setOnClickListener {
-            val intent = Intent(this@AddExpenseActivity, SumFactsActivity::class.java)
+            val intent = Intent(this@AddIncomeActivity, SumFactsActivity::class.java)
             startActivity(intent)
         }
     }

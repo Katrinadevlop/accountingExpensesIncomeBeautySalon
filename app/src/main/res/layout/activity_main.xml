@@ -12,16 +12,16 @@
         android:layout_width="253dp"
         android:layout_height="97dp"
         android:text="@string/choosing_salon"
+        android:textAllCaps="true"
+        android:textColor="@color/crimson"
         android:textSize="40sp"
         android:textStyle="bold"
-        android:textColor="@color/crimson"
-        android:textAllCaps="true"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.145"
+        app:layout_constraintHorizontal_bias="0.367"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.151" />
+        app:layout_constraintVertical_bias="0.156" />
 
     <TextView
         android:id="@+id/salon"
@@ -79,28 +79,61 @@
     <Button
         android:id="@+id/password"
         android:layout_width="183dp"
-        android:layout_height="50dp"
-        android:layout_marginEnd="16dp"
+        android:layout_height="70dp"
         android:layout_marginBottom="110dp"
         android:text="@string/password"
         android:textAllCaps="true"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.929"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editText_password"
         app:layout_constraintVertical_bias="1.0" />
 
     <Button
         android:id="@+id/ds_admin"
         android:layout_width="179dp"
-        android:layout_height="50dp"
+        android:layout_height="70dp"
         android:layout_marginBottom="110dp"
         android:text="@string/ds_admin"
         android:textAllCaps="true"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/password"
-        app:layout_constraintHorizontal_bias="0.617"
+        app:layout_constraintHorizontal_bias="0.484"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editText_password"
         app:layout_constraintVertical_bias="1.0" />
+
+    <!--<LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        &lt;!&ndash; Text view to get all name &ndash;&gt;
+        <TextView
+            android:id="@+id/Name"
+            android:textAlignment="center"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20sp"
+            android:text="Name\n\n"
+            android:textSize="22sp"
+            android:padding="10sp"
+            android:textColor="#000000"/>
+
+        &lt;!&ndash; Text view to get all ages &ndash;&gt;
+        <TextView
+            android:layout_weight="1"
+            android:id="@+id/Age"
+            android:textAlignment="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20sp"
+            android:text="Age\n\n"
+            android:textSize="22sp"
+            android:padding="10sp"
+            android:textColor="#000000"/>
+
+    </LinearLayout>-->
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -7,100 +7,119 @@
     android:layout_height="match_parent"
     tools:context=".AccountingActivity">
 
-    <Button
-        android:id="@+id/add_client"
-        android:layout_width="150dp"
-        android:layout_height="60dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="44dp"
-        android:text="@string/add_client"
-        android:textAllCaps="true"
-        app:layout_constraintEnd_toStartOf="@+id/edit_client"
-        app:layout_constraintHorizontal_bias="0.25"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+    <TableLayout
+        android:id="@+id/tableLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:stretchColumns="*"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        android:paddingTop="10dp">
 
-    <Button
-        android:id="@+id/edit_client"
-        android:layout_width="210dp"
-        android:layout_height="60dp"
-        android:layout_marginTop="44dp"
-        android:layout_marginEnd="28dp"
-        android:text="@string/edit_client"
-        android:textAllCaps="true"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical|center_horizontal">
 
-    <Button
-        android:id="@+id/add_income"
-        android:layout_width="140dp"
-        android:layout_height="60dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="28dp"
-        android:text="@string/add_income"
-        android:textAllCaps="true"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/add_client" />
+            <Button
+                android:id="@+id/add_client"
+                android:layout_width="0dp"
+                android:layout_height="70dp"
+                android:text="@string/add_client"
+                android:textAllCaps="true"
+                android:layout_marginEnd="8dp"/>
 
-    <Button
-        android:id="@+id/add_expense"
-        android:layout_width="150dp"
-        android:layout_height="60dp"
-        android:layout_marginTop="28dp"
-        android:text="@string/add_expense"
-        android:textAllCaps="true"
-        app:layout_constraintEnd_toStartOf="@+id/report"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toEndOf="@+id/add_income"
-        app:layout_constraintTop_toBottomOf="@+id/edit_client" />
+            <Button
+                android:id="@+id/edit_client"
+                android:layout_width="0dp"
+                android:layout_height="70dp"
+                android:text="@string/edit_client"
+                android:textAllCaps="true"
+                />
+        </TableRow>
 
-    <Button
-        android:id="@+id/report"
-        android:layout_width="100dp"
-        android:layout_height="60dp"
-        android:layout_marginTop="28dp"
-        android:layout_marginEnd="12dp"
-        android:text="@string/report"
-        android:textAllCaps="true"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/edit_client" />
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical|center_horizontal">
+
+            <Button
+                android:id="@+id/add_income"
+                android:layout_width="0dp"
+                android:layout_height="70dp"
+                android:text="@string/add_income"
+                android:textAllCaps="true"
+                android:layout_marginEnd="8dp"/>
+
+            <Button
+                android:id="@+id/add_expense"
+                android:layout_width="0dp"
+                android:layout_height="70dp"
+                android:text="@string/add_expense"
+                android:textAllCaps="true" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical|center_horizontal">
+
+            <Button
+                android:id="@+id/report"
+                android:layout_width="0dp"
+                android:layout_height="70dp"
+                android:text="@string/report"
+                android:textAllCaps="true" />
+        </TableRow>
+    </TableLayout>
 
     <TableLayout
+        android:id="@+id/tableLayout"
         android:layout_width="378dp"
         android:layout_height="282dp"
+        android:layout_marginBottom="208dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.515"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/add_expense"
-        app:layout_constraintVertical_bias="0.16">
+        app:layout_constraintTop_toBottomOf="@+id/tableLayout1">
 
         <TableRow tools:ignore="UselessParent">
-            <TextView android:text="@string/client"
-                android:textSize="16sp"
-                android:textStyle="bold"
+
+            <TextView
+                android:paddingStart="0dp"
                 android:paddingEnd="10dp"
-                android:paddingStart="0dp" />
-            <TextView android:text="@string/master"
+                android:text="@string/client"
                 android:textSize="16sp"
-                android:textStyle="bold"
+                android:textStyle="bold" />
+
+            <TextView
+                android:paddingStart="0dp"
                 android:paddingEnd="10dp"
-                android:paddingStart="0dp" />
-            <TextView android:text="@string/procedure"
+                android:text="@string/master"
                 android:textSize="16sp"
-                android:textStyle="bold"
+                android:textStyle="bold" />
+
+            <TextView
+                android:paddingStart="0dp"
                 android:paddingEnd="10dp"
-                android:paddingStart="0dp" />
-            <TextView android:text="@string/type_calculation"
+                android:text="@string/procedure"
                 android:textSize="16sp"
-                android:textStyle="bold"
+                android:textStyle="bold" />
+
+            <TextView
+                android:paddingStart="0dp"
                 android:paddingEnd="10dp"
-                android:paddingStart="0dp"/>
-            <TextView android:text="@string/amount"
+                android:text="@string/type_calculation"
                 android:textSize="16sp"
-                android:textStyle="bold"
+                android:textStyle="bold" />
+
+            <TextView
+                android:paddingStart="0dp"
                 android:paddingEnd="10dp"
-                android:paddingStart="0dp"/>
+                android:text="@string/amount"
+                android:textSize="16sp"
+                android:textStyle="bold" />
         </TableRow>
     </TableLayout>
 
